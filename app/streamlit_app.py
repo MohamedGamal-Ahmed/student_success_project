@@ -30,8 +30,8 @@ def load_models_and_data():
     """Load all models and necessary data, caching the result."""
     try:
         # Load models
-        model_simple_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'model_optimized.pkl')
-        model_advanced_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'random_forest_optimized.pkl')
+        model_simple_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'C:/Users/Mgama/Ai_Amit_Diploma/Amit_ai_diploma/student_success_project/models/model_optimized.pkl')
+        model_advanced_path = os.path.join(os.path.dirname(__file__), '..', 'models', 'C:/Users/Mgama/Ai_Amit_Diploma/Amit_ai_diploma/student_success_project/models/random_forest_optimized.pkl')
         
         models = {
             "Simple Model (9 features)": joblib.load(model_simple_path),
@@ -39,9 +39,9 @@ def load_models_and_data():
         }
 
         # Load data for analysis and feature selection
-        clean_data_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'clean_students.csv')
-        x_train_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'X_train.csv')
-        y_train_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'y_train.csv')
+        clean_data_path = os.path.join(os.path.dirname(__file__), '..', 'C:/Users/Mgama/Ai_Amit_Diploma/Amit_ai_diploma/student_success_project/data/clean_students.csv')
+        x_train_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'C:/Users/Mgama/Ai_Amit_Diploma/Amit_ai_diploma/student_success_project/data/X_train.csv')
+        y_train_path = os.path.join(os.path.dirname(__file__), '..', 'data', 'C:/Users/Mgama/Ai_Amit_Diploma/Amit_ai_diploma/student_success_project/data/y_train.csv')
         
         data = {
             "full_data": pd.read_csv(clean_data_path),
